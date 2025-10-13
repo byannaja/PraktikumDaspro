@@ -5,7 +5,7 @@ INPUT ...
 
 
 ## Percobaan 3 — Nested IF untuk Ujian Skripsi
-> Pertanyaan & Jawaban
+> Pertanyaan & Jawaban.
 
 1.Apa yang terjadi jika mahasiswa menjawab "No" pada pertanyaan bebas kompen?
 Program langsung menolak pendaftaran karena syarat pertama (bebas kompen) belum terpenuhi, sehingga tidak lanjut memeriksa log bimbingan.
