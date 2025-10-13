@@ -1,3 +1,6 @@
+```text
+START
+INPUT ...
 # 🧾 JOBSHEET 5
 
 
@@ -20,3 +23,5 @@ if (semester == 1) {
 } else {
     System.out.println("Semester tidak valid.");
 }
+END
+```
