@@ -4,24 +4,32 @@ INPUT ...
 # 🧾 JOBSHEET 5
 
 
-## Percobaan 2 — SWITCH-CASE untuk Cetak KRS  
-
+## Percobaan 3 — Nested IF untuk Ujian Skripsi
 > Pertanyaan & Jawaban
 
-1.Apa fungsi dari sintaks break?
-Untuk menghentikan eksekusi di dalam switch setelah satu case dijalankan agar tidak melanjutkan ke case berikutnya.
+1.Apa yang terjadi jika mahasiswa menjawab "No" pada pertanyaan bebas kompen?
+Program langsung menolak pendaftaran karena syarat pertama (bebas kompen) belum terpenuhi, sehingga tidak lanjut memeriksa log bimbingan.
 
-2.Apa peran dari sintaks default pada struktur SWITCH-CASE?
-Untuk menangani kondisi ketika tidak ada case yang cocok dengan nilai yang diuji.
+2.Jelaskan maksud potongan kode berikut:
 
-3.Bagaimana mengubah SWITCH-CASE menjadi IF-ELSE IF-ELSE?
-Gunakan struktur :
-if (semester == 1) {
-    System.out.println("KRS Semester 1 ditampilkan");
-} else if (semester == 2) {
-    System.out.println("KRS Semester 2 ditampilkan");
+if (bebasKompen.equalsIgnoreCase("ya")) {
+    if (bimbinganP1 >= 8 && bimbinganP2 >= 4) {
+        pesan = "Selamat! Mahasiswa sudah memenuhi syarat.";
+    } else {
+        pesan = "Gagal! Log bimbingan belum cukup.";
+    }
 } else {
-    System.out.println("Semester tidak valid.");
+    pesan = "Gagal! Mahasiswa masih memiliki tanggungan kompen.";
 }
+Kode tersebut memeriksa dua hal:
+~ Apakah mahasiswa bebas kompen.
+~ Jika ya, apakah jumlah bimbingan P1 ≥ 8 dan P2 ≥ 4.
+Jika dua duanya mmenuhi syaratbya maka mahasiswa dinyatakan memenuhi syarat ujian skripsi.
+3. Bagaimana alur pemeriksaan syarat mahasiswa dari awal sampai akhir?
+Cek apakah mahasiswa bebas kompen.
+Jika tidak bebas → langsung gagal.
+Jika bebas → periksa jumlah log bimbingan pembimbing 1 dan pembimbing 2.
+Jika keduanya memenuhi syarat → tampilkan pesan “Selamat!”.
+Jika salah satu kurang → tampilkan pesan gagal sesuai kondisi.
 END
 ```
