@@ -1,4 +1,4 @@
-# 🧾 JOBSHEET 5 - PEMILIHAN  
+# 🧾 JOBSHEET 5
 
 
 ## 🧪 Percobaan 1 — IF dan IF-ELSE untuk Cetak KRS  
