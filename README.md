@@ -1,46 +1,21 @@
-### 🧱 **Flowchart Sistem Perpustakaan Kampus**
-![Flowchart Perpustakaan](image/sistemperpus.jpeg)
-![Flowchart WiFi Kampus](image/wifiperpus.jpeg)
+# 🧾 JOBSHEET 5 - PEMILIHAN  
 
 
-#### 🧠 Pseudocode
-```text
-START
-Tampilkan judul "Sistem Perpustakaan dan WiFi Kampus"
+## 🧪 Percobaan 1 — IF dan IF-ELSE untuk Cetak KRS  
 
-INPUT kartuAnggota (true/false)
-INPUT uktLunas (true/false)
+> **Pertanyaan & Jawaban**
 
-IF kartuAnggota == true AND uktLunas == true THEN
-    PRINT "Anda bisa meminjam buku dan memakai wifi kampus."
-ELSE IF kartuAnggota == true AND uktLunas == false THEN
-    PRINT "Anda hanya bisa meminjam buku, tapi belum bisa pakai wifi."
-ELSE IF kartuAnggota == false AND uktLunas == true THEN
-    PRINT "Anda bisa pakai wifi kampus, tapi belum bisa pinjam buku."
-ELSE
-    PRINT "Anda belum bisa memakai fasilitas kampus."
-ENDIF
+1. **Mengapa pengecekan pada struktur IF tidak melibatkan operator relasional?**  
+   Karena variabel `uktLunas` bertipe boolean (true/false), sehingga tidak perlu menggunakan operator relasional seperti `==`, `>`, atau `<`.
 
-END
+2. **Saat program dijalankan dan Anda mengisikan nilai false, bagaimana hasilnya?**  
+   Program akan menjalankan blok `else` dan menampilkan pesan bahwa registrasi ditolak karena UKT belum lunas.
 
-
-START
-Tampilkan judul "Sistem Akses WiFi Kampus"
-
-INPUT jenisPengguna
-
-IF jenisPengguna == "dosen" THEN
-    PRINT "Akses WiFi diberikan (dosen)"
-ELSE IF jenisPengguna == "mahasiswa" THEN
-    INPUT sks
-    IF sks >= 12 THEN
-        PRINT "Akses WiFi diberikan (mahasiswa aktif)"
-    ELSE
-        PRINT "Akses ditolak, SKS kurang dari 12"
-    ENDIF
-ELSE
-    PRINT "Akses ditolak, hanya untuk civitas akademika"
-ENDIF
-
-END
-
+3. **Bagaimana menampilkan pesan “Registrasi ditolak. Silakan lunasi UKT terlebih dahulu”?**  
+   Tambahkan struktur `else` seperti berikut:  
+   ```java
+   if (uktLunas) {
+       System.out.println("Pembayaran UKT terverifikasi. Silakan cetak KRS.");
+   } else {
+       System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu.");
+   }
