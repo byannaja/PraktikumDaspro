@@ -1,4 +1,4 @@
-# 💻 Jobsheet 8 – Perulangan 2
+# Jobsheet 8 – Perulangan 2
 **Mata Kuliah:** Dasar Pemrograman  
 **Topik:** Perulangan Bersarang (Nested Loop)  
 **Nama:** Muhammad Abyan Andhi Putra
