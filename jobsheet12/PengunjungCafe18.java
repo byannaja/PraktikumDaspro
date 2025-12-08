@@ -2,8 +2,6 @@ package jobsheet12;
 
 public class PengunjungCafe18 {
 
-public class PengunjungCafeNoAbsen {
-
     static void daftarPengunjung(String...namaPengunjung){
         System.out.println("Daftar Nama Pengunjung:");
         
@@ -17,5 +15,4 @@ public class PengunjungCafeNoAbsen {
         daftarPengunjung("Andi");
         daftarPengunjung("Doni","Eti","Fahmi","Galih");
     }
-}
 }
