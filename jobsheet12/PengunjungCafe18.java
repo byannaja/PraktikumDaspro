@@ -3,7 +3,7 @@ package jobsheet12;
 public class PengunjungCafe18 {
 
     static void daftarPengunjung(String...namaPengunjung){
-        System.out.println("Daftar Nama Pengunjung:");
+        System.out.println("Daftar  Nama Pengunjung:");
         
         for(int i = 0; i < namaPengunjung.length; i++){
             System.out.println("- " + namaPengunjung[i]);
