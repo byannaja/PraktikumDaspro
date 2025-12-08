@@ -1,7 +1,7 @@
 package jobsheet12;
 import java.util.Scanner;
 
-public class HitungBalok {
+public class HitungBalok18 {
     public static void main(String[] args) {
        Scanner input = new Scanner(System.in);
        int p,l,t,L,vol;
